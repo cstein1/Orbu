@@ -31,7 +31,7 @@ public class DeckController : MonoBehaviour {
         }
         catch
         {
-            Debug.Log("DeckController, Draw(): Could not draw any more");
+            Debug.Log("DeckController, Draw(): Could not draw any more cards");
         }
         
     }
