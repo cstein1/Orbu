@@ -58,7 +58,9 @@
      <Compile Include="Assets\Scripts\Board\DeckController.cs" />
      <Compile Include="Assets\Scripts\Board\GraveyardController.cs" />
      <Compile Include="Assets\Scripts\Board\HandController.cs" />
+     <Compile Include="Assets\Scripts\Board\HolderController.cs" />
      <Compile Include="Assets\Scripts\Board\MatController.cs" />
+     <Compile Include="Assets\Scripts\Board\PlayerController.cs" />
      <Compile Include="Assets\Scripts\HistoryController.cs" />
      <Compile Include="Assets\Scripts\Phases\EndController.cs" />
      <Compile Include="Assets\Scripts\Phases\ExecutionController.cs" />

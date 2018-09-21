@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO Fan out cards
+//TODO Draw animation
+//TODO Sprite assignment
+
 public class CardController : MonoBehaviour {
 
     public enum props
@@ -14,35 +18,36 @@ public class CardController : MonoBehaviour {
         Conjure, Drain
     };
 
-    bool follow;
+    public bool cardHolding;
 
     // Use this for initialization
     void Start () {
         // Bunch of cases for etb
         //rb = gameObject.GetComponent<Rigidbody2D>();
-        follow = false;
+        cardHolding = false;
     }
 
     // Update is called once per frame
     void Update () {
-        // Is card hovered over
-        if (follow)
+        if (cardHolding)
         {
-            //transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
+            transform.position = new Vector3(
+                    Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
+                    Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
+                    transform.position.z
+                );
 
-        /*if (Input.GetKeyDown("space"))
-            MoveCard("space");
-        else if (Input.GetKeyDown("d"))
-            MoveCard("d");
-        else if (Input.GetKeyDown("g"))
-            MoveCard("g");*/
+        }
     }
 
     void OnMouseDown()
     {
-        follow = !follow;
-        Debug.Log("Click heard!");
+        cardHolding = true;
+    }
+
+    void OnMouseUp()
+    {
+        cardHolding = false;
     }
 
     public void MoveCard(string key)
@@ -53,15 +58,24 @@ public class CardController : MonoBehaviour {
             {
                 case "space":
                     transform.parent = transform.parent.parent.Find("Mat");
+                    transform.position = transform.parent.position;
+                    transform.position = new Vector3(
+                        transform.parent.childCount,
+                        transform.position.y, -1);
                     break;
                 case "d":
                     transform.parent = transform.parent.parent.Find("Hand");
+                    transform.position = transform.parent.position;
+                    transform.position = new Vector3(
+                        transform.parent.childCount,
+                        transform.position.y, -1);
                     break;
                 case "g":
                     transform.parent = transform.parent.parent.Find("Graveyard");
+                    transform.position = transform.parent.position;
                     break;
             }
-            transform.position = transform.parent.position;
+            
         }
         catch
         {
