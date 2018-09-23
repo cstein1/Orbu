@@ -20,11 +20,12 @@ This is a **potion** and a **charm**, two of many examples of spells!
 Playing a potion generates an action immediately, while a charm takes some time to become effective.
 They cost mana from a particular well and have some effect! They are both very strong.
 
-(10 blue mana, *trap - Zip*, Destroy the next spell)
+(10 blue mana, *trap - Zipping Phase*, Destroy the next spell in the zip)
 
 Wait... This is a weird spell. I don't believe I've ever seen it before...
 It seems as if you can meddle with your opponent's plans. I... I LOVE IT.
 I can't wait to crawl up in their brains! Hehehe
+This spell seems to happen *during* the zipping phase. I'll explain later, but this is so exciting!
 
 # Mana
 As in most strategy games, resources are fuel for the running engine of play! 
