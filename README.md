@@ -89,3 +89,9 @@ Each End Phase, we get 3 more spells in our hand and 2 more mana in each mana we
 How exciting!
 
 Now we go again until someone has filled up each of their mana wells all the way! How cool!
+
+# Credit
+Creator - Charlie Stein (cstein1)
+Creatives - Asa Spades Turner, Zach Taylor
+
+Feel free to check out the Kanbahn Boards and get a pull request going.
