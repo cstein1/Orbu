@@ -94,7 +94,8 @@ Now we go again until someone has filled up each of their mana wells all the way
 # Credit
 Creator - Charlie Stein (cstein1)
 
-Creatives - Asa Spades Turner
+Contributor - Asa Spades Turner
+Contributor - Stephen Hough
 
 Feel free to check out the Kanbahn Boards and get a pull request going.
 You may be added to credits and testing upon request.
